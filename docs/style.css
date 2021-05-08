@@ -59,7 +59,6 @@ select {
 html {
   position: relative;
   height: 100%;
-  color: #442A24;
   font-family: "Montserrat", sans-serif;
   font-size: 4.75vw; }
   @media (min-width: 600px) {
@@ -74,9 +73,7 @@ html {
 
 body {
   position: relative;
-  overflow-x: hidden;
-  background-color: #f9ded8;
-  background-image: linear-gradient(to right, #dcb7b7, #f9ded8); }
+  overflow-x: hidden; }
 
 .nowrap {
   white-space: nowrap; }
