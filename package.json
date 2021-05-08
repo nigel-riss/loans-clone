@@ -1,0 +1,31 @@
+{
+  "name": "loans-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "markup": "gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nigel-riss/loans-clone.git"
+  },
+  "author": "Yuriy Kurenkov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nigel-riss/loans-clone/issues"
+  },
+  "homepage": "https://github.com/nigel-riss/loans-clone#readme",
+  "devDependencies": {
+    "@babel/core": "7.14.0",
+    "@babel/preset-env": "7.14.1",
+    "babel-loader": "8.2.2",
+    "browser-sync": "2.26.14",
+    "gulp": "4.0.2",
+    "gulp-embed-svg": "1.4.0",
+    "gulp-pug": "4.0.1",
+    "gulp-sass": "4.1.0",
+    "webpack-stream": "6.1.2"
+  }
+}
