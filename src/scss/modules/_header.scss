@@ -3,14 +3,15 @@
   padding: 1.5rem;
 
   // visual
-  background-image: linear-gradient(to bottom, $green, $white);
+  background-image: linear-gradient(to bottom, $green, $lightGreen);
+  background-color: $lightGreen;
 }
 
 .header__top {
   // box model
   display: flex;
   justify-content: space-between;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .header__logo-n-nav {

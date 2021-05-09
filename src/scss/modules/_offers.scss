@@ -3,5 +3,11 @@
   padding: 0.75rem;
 
   // visual
-  background-image: linear-gradient(to top, $green, $white 25rem);
+  background-image:
+    linear-gradient(to bottom, $lightGreen, transparent 25rem),
+    linear-gradient(to top, $green, transparent 25rem);
+
+  background-position:
+    top center,
+    bottom center;
 }

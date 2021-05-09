@@ -5,9 +5,10 @@
 
 .number__title {
   // typography
+  color: $darkGreen;
   font-weight: 400;
   font-size: 0.75rem;
-  line-height: 1.25;
+  line-height: 1.125;
 }
 
 .number__value {
@@ -15,5 +16,5 @@
   color: $dark;
   font-weight: 600;
   font-size: 0.9rem;
-  line-height: 1.25;
+  line-height: 1.125;
 }
