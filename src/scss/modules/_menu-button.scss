@@ -2,8 +2,16 @@
   // box model
   display: block;
 
+  // border
+  border: none;
+
   // typography
   font-size: 0;
+
+  // visual
+  background-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 .menu-button svg {

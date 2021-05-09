@@ -148,19 +148,28 @@ body {
       margin-bottom: 6rem; } }
 
 .header__logo-n-nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
+  bottom: 0;
+  z-index: 9;
   padding: 1.5rem;
   padding-bottom: 2rem;
-  background-color: #8dd252; }
+  background-color: #8dd252;
+  background-image: linear-gradient(to bottom, #69a938, #ffffff 200vh);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.25s ease-out; }
   @media (min-width: 600px) {
     .header__logo-n-nav {
       position: relative;
       display: flex;
       padding: 0;
       background-color: transparent; } }
+  .header__logo-n-nav.open {
+    opacity: 1;
+    pointer-events: all; }
 
 .header__close {
   position: absolute;
@@ -200,7 +209,7 @@ body {
 
 .header__menu-button {
   padding-top: 0.5rem;
-  width: 2rem; }
+  width: 2.25rem; }
   @media (min-width: 600px) {
     .header__menu-button {
       display: none; } }
@@ -294,7 +303,11 @@ body {
 
 .menu-button {
   display: block;
-  font-size: 0; }
+  border: none;
+  font-size: 0;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none; }
 
 .menu-button svg {
   width: 100%;
@@ -653,7 +666,7 @@ body {
 
 .up-button {
   position: fixed;
-  z-index: 10;
+  z-index: 8;
   bottom: 0;
   right: 1rem;
   display: flex;

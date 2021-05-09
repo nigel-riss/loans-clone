@@ -58,10 +58,12 @@
 
 .header__logo-n-nav {
   // positioning
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
+  bottom: 0;
+  z-index: 9;
 
   // box model
   padding: 1.5rem;
@@ -69,6 +71,10 @@
 
   // visual
   background-color: $lightGreen;
+  background-image: linear-gradient(to bottom, $green, $white 200vh);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.25s ease-out;
 
   @include atTablet {
     // positioning
@@ -80,6 +86,12 @@
 
     // visual
     background-color: transparent;
+  }
+
+  &.open {
+    // visual
+    opacity: 1;
+    pointer-events: all;
   }
 }
 
@@ -128,8 +140,7 @@
 }
 
 .header__nav {
-  // box model
-  // display: none;
+
 }
 
 .header__city {
@@ -154,7 +165,7 @@
 .header__menu-button {
   // box model
   padding-top: 0.5rem;
-  width: 2rem;
+  width: 2.25rem;
 
   @include atTablet {
     // box model

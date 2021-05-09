@@ -99,11 +99,26 @@ const compileStyles = (cb) => {
   cb();
 }
 
+// Compile js code
+const compileScripts = (cb) => {
+  gulp.src(dirs.jsSrc)
+    .pipe(webpack(webpackConfig))
+    .on(`error`, (error) => {
+      console.log("\x1b[31m", error.message, "\x1b[0m");
+    })
+    .pipe(gulp.dest(dirs.dist))
+    .pipe(server.stream());
+
+  cb();
+};
+
 
 const watch = () => {
   startServer();
   gulp.watch(dirs.pugMain, renderPug);
   gulp.watch(dirs.scssAll, compileStyles);
+  gulp.watch(dirs.jsSrc, compileScripts);
+
 };
 
 
@@ -111,3 +126,4 @@ exports.watch = watch;
 exports.pug = renderPug;
 exports.styles = compileStyles;
 exports.server = startServer;
+exports.scripts = compileScripts;

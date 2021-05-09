@@ -13,7 +13,7 @@ html(lang="en")
     header.header
       .header__top
         .header__logo-n-nav
-          button.header__close x
+          button.header__close#close-button x
           .header__logo
             img(src="./img/rouble.svg", alt="logo")
           nav.header__nav
@@ -38,7 +38,7 @@ html(lang="en")
                 p.loans-given__given выдано займов
 
         .header__menu-button
-          a.menu-button(href="#" role="button") ≡
+          button#menu-button.menu-button(href="#" role="button") ≡
             img(src="./img/menu.svg", alt="")
 
       .header__hero
@@ -356,3 +356,5 @@ html(lang="en")
           .up-button__icon
             img(src="./img/up.svg", alt="")
           span.up-button__text наверх
+
+    script(src="scripts.js") 
