@@ -343,3 +343,16 @@ body {
 
 .label--blue {
   background-color: #1b74b4; }
+
+.description {
+  padding: 1.5rem; }
+
+.disclaimer {
+  padding: 1.5rem; }
+
+.section-title {
+  margin-bottom: 1rem;
+  font-weight: 500; }
+
+.section-text {
+  margin-bottom: 1rem; }
