@@ -11,8 +11,20 @@
   @include atTablet {
     // box model
     padding: 2rem;
+    padding-top: 8rem;
 
     // typography
     text-align: left;
+  }
+
+  @include atDesktopS {
+    // box model
+    padding: 4rem;
+    padding-top: 8rem;
+  }
+
+  @include atDesktopM {
+    // box model
+    padding: 4rem $dPadding;
   }
 }

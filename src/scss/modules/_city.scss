@@ -15,12 +15,9 @@
 
 .city__marker {
   // box model
-  // order: 1;
-  // width: 1.5rem;
   height: 2rem;
   width: 2rem;
   margin-right: 0.5rem;
-  // text-align: left;
 }
 
 .city__marker img,
@@ -52,12 +49,12 @@
 
   // typography
   font-size: 0.85rem;
-  line-height: 1;
+  line-height: 1.125;
 }
 
 .city__city {
   // typography
   font-weight: 600;
-  line-height: 1;
+  line-height: 1.125;
 }
 

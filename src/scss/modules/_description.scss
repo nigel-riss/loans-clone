@@ -12,4 +12,14 @@
     // box model
     padding: 2rem;
   }
+
+  @include atDesktopS {
+    // box model
+    padding: 4rem;
+  }
+
+  @include atDesktopM {
+    // box model
+    padding: 4rem $dPadding;
+  }
 }

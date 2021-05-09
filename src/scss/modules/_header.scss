@@ -3,12 +3,39 @@
   padding: 1.5rem;
 
   // visual
-  background-image: linear-gradient(to bottom, $green, $lightGreen);
   background-color: $lightGreen;
+  background-image: linear-gradient(to bottom, $green, $lightGreen);
 
   @include atTablet {
     // box model
     padding: 2rem;
+
+    // visual
+    background-image:
+      // url('./img/header-bg.svg'),
+      url('./img/header-bg.png'),
+      linear-gradient(to bottom, $green, $lightGreen);
+    background-repeat: no-repeat;
+    background-position: bottom 3.25rem right 1.5rem, center center;
+    background-size: 40%, 100%;
+  }
+
+  @include atDesktopS {
+    // box model
+    padding: 4rem;
+
+    // visual
+    background-position: bottom 1rem right 3rem, center center;
+    background-size: 45%, 100%;
+  }
+  
+  @include atDesktopM {
+    // box model
+    padding: 4rem $dPadding;
+
+    // visual
+    background-position: bottom right $dPadding, center center;
+    background-size: 34rem, 100%;
   }
 }
 
@@ -21,6 +48,11 @@
   @include atTablet {
     // box model
     margin-bottom: 4rem;
+  }
+
+  @include atDesktopM {
+    // box model
+    margin-bottom: 6rem;
   }
 }
 
@@ -70,6 +102,11 @@
   @include atTablet {
     // box model
     margin-right: 1rem;
+  }
+
+  @include atDesktopS {
+    // box model
+    margin-right: 2rem;
   }
 }
 

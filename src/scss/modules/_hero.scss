@@ -3,12 +3,16 @@
     // box model
     padding: 2rem 0;
     padding-right: 45%;
+  }
 
-    // visual
-    background-image: url('/img/header-bg.svg');
-    background-repeat: no-repeat;
-    background-position: bottom 1rem right;
-    background-size: 45%;
+  @include atDesktopS {
+    // box model
+    padding-right: 50%;
+  }
+
+  @include atDesktopM {
+    // box model
+    padding-right: 55%;
   }
 }
 
@@ -30,11 +34,21 @@
     // typography
     font-size: 1.75rem;
   }
+
+  @include atDesktopS {
+    // typography
+    font-size: 2.25rem;
+  }
 }
 
 .hero__subtitle {
   // typography
   font-size: 0.75rem;
+
+  @include atDesktopS {
+    // typography
+    font-size: 0.8rem;
+  }
 }
 
 .hero__cta {
@@ -46,5 +60,10 @@
     display: block;
     margin-top: 2rem;
     margin-left: -0.25rem;
+  }
+
+  @include atDesktopS {
+    // box model
+    margin-top: 4rem;
   }
 }

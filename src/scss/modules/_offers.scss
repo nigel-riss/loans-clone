@@ -5,7 +5,7 @@
   // visual
   background-image:
     linear-gradient(to bottom, $lightGreen, transparent 25rem),
-    linear-gradient(to top, $green, transparent 25rem);
+    linear-gradient(to top, $green, transparent 50rem);
 
   background-position:
     top center,
@@ -14,5 +14,38 @@
   @include atTablet {
     // box model
     padding: 1rem;
+  }
+
+  @include atDesktopS {
+    // box model
+    padding: 4rem;
+  }
+
+  @include atDesktopM {
+    // box model
+    padding: 4rem $dPadding;
+  }
+}
+
+.offers__title {
+  // box model
+  display: none;
+
+  @include atTablet {
+    // box model
+    display: block;
+    margin-bottom: 2rem;
+
+    // typography
+    color: $white;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.25;
+    text-align: center;
+  }
+
+  @include atDesktopS {
+    // typography
+    font-size: 2rem;
   }
 }

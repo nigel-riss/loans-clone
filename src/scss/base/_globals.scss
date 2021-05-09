@@ -2,9 +2,6 @@ html {
   // positioning
   position: relative;
 
-  // box model
-  height: 100%;
-
   // typography
   font-family: $mainFont;
   font-size: 4.75vw;
@@ -15,11 +12,11 @@ html {
   }
 
   @include atDesktopS {
-    font-size: 1.4vw;
+    font-size: 1.5vw;
   }
   
   @include atDesktopM {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
@@ -32,6 +29,20 @@ body {
 
   // visual
   overflow-x: hidden;
+
+
+  @include atTablet {
+    // visual
+    background-image: url('./img/footer-bg.png');
+    background-size: 22rem;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+  }
+
+  @include atDesktopS {
+    // visual
+    background-size: 28rem;
+  }
 }
 
 .nowrap {
