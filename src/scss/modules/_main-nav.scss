@@ -1,5 +1,6 @@
 .main-nav {
-
+  // visual
+  background-color: $lightGreen;
 }
 
 .main-nav__list {
@@ -7,9 +8,25 @@
 }
 
 .main-nav__item {
-
+  // box model
+  display: block;
 }
 
 .main-nav__link {
+  // box model
+  display: block;
+  padding: 0.5rem 1rem;
 
+  // border
+  border-radius: 0.5rem;
+
+  // typography
+  color: $darkGreen;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  // visual
+  background-color: $white;
 }

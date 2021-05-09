@@ -59,11 +59,41 @@
 .header__logo-n-nav {
   // positioning
   position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  // box model
+  padding: 1.5rem;
+  padding-bottom: 2rem;
+
+  // visual
+  background-color: $lightGreen;
 
   @include atTablet {
     // positioning
     position: relative;
   }
+}
+
+.header__close {
+  // positioning
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+
+  // border
+  border: none;
+
+  // typography
+  color: $white;
+  font-size: 2rem;
+  line-height: 1;
+
+  // visual
+  background-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 .header__column {
@@ -75,14 +105,9 @@
 
 .header__logo {
   // box model
-  display: none;
-
-  @include atTablet {
-    // box model
-    display: block;
-    height: 3rem;
-    width: 3rem;
-  }
+  height: 3rem;
+  width: 3rem;
+  margin-bottom: 1rem;
 }
 
 .header__logo svg {
@@ -92,7 +117,7 @@
 
 .header__nav {
   // box model
-  display: none;
+  // display: none;
 }
 
 .header__city {

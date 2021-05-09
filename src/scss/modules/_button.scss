@@ -18,6 +18,8 @@
 
   // visual
   background-color: $white;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 
   @include atTablet {
     // box model
