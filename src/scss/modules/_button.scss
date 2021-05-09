@@ -13,7 +13,16 @@
   letter-spacing: 0.05em;
   line-height: 1;
   text-align: center;
+  text-decoration: none;
   text-transform: uppercase;
+
+  // visual
+  background-color: $white;
+
+  @include atTablet {
+    // box model
+    padding: 0.75rem 2rem;
+  }
 }
 
 .button:hover {

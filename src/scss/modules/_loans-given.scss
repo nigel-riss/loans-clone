@@ -9,11 +9,14 @@
 
 .loans-given__icon {
   // box model
-  // order: 1;
-  // width: 1.5rem;
   height: 2rem;
   width: 2rem;
   margin-right: 0.5rem;
+
+  @include atTablet {
+    // box model
+    display: none;
+  }
 }
 
 .loans-given__icon img,
@@ -23,6 +26,13 @@
 
   // visual
   fill: $white;
+}
+
+.loans-given__text {
+  @include atTablet {
+    // typography
+    text-align: right;
+  }
 }
 
 .loans-given__number {

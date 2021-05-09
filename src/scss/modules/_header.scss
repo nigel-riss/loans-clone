@@ -5,6 +5,11 @@
   // visual
   background-image: linear-gradient(to bottom, $green, $lightGreen);
   background-color: $lightGreen;
+
+  @include atTablet {
+    // box model
+    padding: 2rem;
+  }
 }
 
 .header__top {
@@ -12,20 +17,45 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 2rem;
+
+  @include atTablet {
+    // box model
+    margin-bottom: 4rem;
+  }
 }
 
 .header__logo-n-nav {
   // positioning
   position: absolute;
+
+  @include atTablet {
+    // positioning
+    position: relative;
+  }
 }
 
 .header__column {
-
+  @include atTablet {
+    // box model
+    display: flex;
+  }
 }
 
 .header__logo {
   // box model
   display: none;
+
+  @include atTablet {
+    // box model
+    display: block;
+    height: 3rem;
+    width: 3rem;
+  }
+}
+
+.header__logo svg {
+  // visual
+  fill: $white;
 }
 
 .header__nav {
@@ -36,6 +66,11 @@
 .header__city {
   // box model
   margin-bottom: 1rem;
+
+  @include atTablet {
+    // box model
+    margin-right: 1rem;
+  }
 }
 
 .header__loans-given {
@@ -46,6 +81,11 @@
   // box model
   padding-top: 0.5rem;
   width: 2rem;
+
+  @include atTablet {
+    // box model
+    display: none;
+  }
 }
 
 .header__hero {

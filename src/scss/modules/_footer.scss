@@ -6,4 +6,13 @@
   // typography
   font-size: 0.85rem;
   text-align: center;
+
+
+  @include atTablet {
+    // box model
+    padding: 2rem;
+
+    // typography
+    text-align: left;
+  }
 }

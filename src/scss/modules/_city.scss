@@ -39,6 +39,11 @@
   // typography
   color: $white;
   text-align: left;
+
+  @include atTablet {
+    // typography
+    text-align: right;
+  }
 }
 
 .city__your {

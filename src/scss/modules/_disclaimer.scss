@@ -1,4 +1,9 @@
 .disclaimer {
   // box model
   padding: 1.5rem;
+
+  @include atTablet {
+    // box model
+    padding: 2rem;
+  }
 }

@@ -17,6 +17,11 @@
 
   // visual
   background-color: $green;
+
+  @include atTablet {
+    // typography
+    font-size: 0.75rem;
+  }
 }
 
 .label:last-of-type {

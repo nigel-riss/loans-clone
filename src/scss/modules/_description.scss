@@ -2,10 +2,14 @@
   // box model
   padding: 1.5rem;
 
+  // typography
   color: $white;
 
+  // visual
   background-color: $green;
  
-  // background-attachment: fixed;
-  background-size: cover;
+  @include atTablet {
+    // box model
+    padding: 2rem;
+  }
 }

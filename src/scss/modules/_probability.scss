@@ -10,16 +10,30 @@
 
   // visual
   background-color: $green;
+
+  @include atTablet {
+    // box model
+    padding: 0.25rem 1rem;
+
+    // border
+    border-radius: 2rem;
+  }
 }
 
 .probability__title {
   // box model
   display: none;
 
-  // typography
-  color: $white;
-  font-weight: 600;
-  font-size: 0.75rem;
+  @include atTablet {
+    // box model
+    display: block;
+    margin-right: 0.5rem;
+
+    // typography
+    color: $white;
+    font-weight: 600;
+    font-size: 0.75rem;
+  }
 }
 
 .probability__mobile-title {
@@ -30,6 +44,11 @@
   color: $white;
   font-weight: 600;
   font-size: 0.75rem;
+
+  @include atTablet {
+    // box model
+    display: none;
+  }
 }
 
 .probability__value {
@@ -37,6 +56,11 @@
   color: $white;
   font-size: 1rem;
   font-weight: 600;
+
+  @include atTablet {
+    // typography
+    font-size: 1.25rem;
+  }
 }
 
 .probability__star {

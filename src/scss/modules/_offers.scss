@@ -10,4 +10,9 @@
   background-position:
     top center,
     bottom center;
+
+  @include atTablet {
+    // box model
+    padding: 1rem;
+  }
 }

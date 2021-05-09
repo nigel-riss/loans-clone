@@ -34,11 +34,25 @@
 
   // visual
   background-color: $white;
+
+  @include atTablet {
+    // box model
+    padding: 1rem;
+  }
 }
 
 .offer__description {
   // box model
   display: none;
+
+  @include atTablet {
+    // box model
+    display: block;
+    margin-bottom: 1rem;
+
+    // typography
+    color: $darkGreen;
+  }
 }
 
 .offer__row {
@@ -48,7 +62,10 @@
 }
 
 .offer__title {
-
+  @include atTablet {
+    // typography
+    font-size: 1.5rem;
+  }
 }
 
 .offer__desc-list {
@@ -56,7 +73,12 @@
 }
 
 .offer__desc-item {
+  // typography
+  font-size: 0.85rem;
 
+  &::before {
+    content: "— ";
+  }
 }
 
 .offer__column {
@@ -65,12 +87,23 @@
   flex-direction: column;
   justify-content: space-between;
   flex-basis: calc(50% - 0.75rem);
+
+  @include atTablet {
+    // box model
+    flex-basis: calc(50% - 1.5rem);
+  }
 }
 
 .offer__logo {
   // box model
   max-height: 2.5rem;
   margin-bottom: 0.5rem;
+
+  @include atTablet {
+    // box model
+    max-height: 3.5rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .offer__logo img {
@@ -80,17 +113,26 @@
 }
 
 .offer__numbers {
-  // box model
-  // display: flex;
-  justify-content: space-between;
+  @include atTablet {
+    // box model
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .offer__probability {
-
+  @include atTablet {
+    // box model
+    align-self: flex-end;
+    margin-bottom: 1rem;
+  }
 }
 
 .offer__cta {
-
+  @include atTablet {
+    // box model
+    align-self: flex-end;
+  }
 }
 
 .offer__max-value {
@@ -102,5 +144,10 @@
   color: $darkGreen;
   font-size: 1.25rem;
   text-align: right;
+
+  @include atTablet {
+    // typography
+    font-size: 1.5rem;
+  }
 }
 
