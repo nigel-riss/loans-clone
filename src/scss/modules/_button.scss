@@ -1,5 +1,19 @@
 .button {
+  // box model
+  padding: 0.5rem 1rem;
 
+  // border
+  border: 2px solid $green;
+  border-radius: 2rem;
+
+  // typography
+  color: $dark;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .button:hover {

@@ -1,5 +1,21 @@
 .header {
+  // box model
+  padding: 1.5rem;
 
+  // visual
+  background-image: linear-gradient(to bottom, $green, $white);
+}
+
+.header__top {
+  // box model
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.header__logo-n-nav {
+  // positioning
+  position: absolute;
 }
 
 .header__column {
@@ -7,11 +23,18 @@
 }
 
 .header__logo {
+  // box model
+  display: none;
+}
 
+.header__nav {
+  // box model
+  display: none;
 }
 
 .header__city {
-
+  // box model
+  margin-bottom: 1rem;
 }
 
 .header__loans-given {
@@ -19,5 +42,11 @@
 }
 
 .header__menu-button {
-  
+  // box model
+  padding-top: 0.5rem;
+  width: 2rem;
+}
+
+.header__hero {
+
 }

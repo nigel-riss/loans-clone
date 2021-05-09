@@ -11,47 +11,51 @@ html(lang="en")
 
   body
     header.header
-      .header__column
-        .header__logo
-          img(src="./img/rouble.svg", alt="logo")
-        nav.main-nav
-          ul.main-nav__list
-            li.main-nav__item
-              a.main-nav__link(href="#offers") Одобрено
+      .header__top
+        .header__logo-n-nav
+          .header__logo
+            img(src="./img/rouble.svg", alt="logo")
+          nav.header__nav
+            ul.main-nav
+              li.main-nav__item
+                a.main-nav__link(href="#offers") Одобрено
 
-      .header__column
-        .header__city
-          button.city
-            .city__marker
-              img(src="./img/marker.svg", alt="")
-            .city__text 
-              p.city__your ваш город:
-              p.city__city Санкт-Петербург
-        .header__loans-given
-          .loans-given
-            p.loans-given__number 53267
-            p.loans-given__given выдано займов
+        .header__column
+          .header__city
+            button.city
+              .city__marker
+                img(src="./img/marker.svg", alt="")
+              .city__text 
+                p.city__your ваш город:
+                p.city__city Санкт-Петербург
+          .header__loans-given
+            .loans-given
+              .loans-given__icon 
+                img(src="./img/loans.svg", alt="")
+              .loans-given__text
+                p.loans-given__number 53267
+                p.loans-given__given выдано займов
 
-      .header__column
         .header__menu-button
           a.menu-button(href="#" role="button") ≡
             img(src="./img/menu.svg", alt="")
 
-    header.hero
-      .hero__caption
-        h1.hero__title Вам одобрены <br>следующие займы:
-        p.hero__subtitle Для увеличения вероятности получения займа рекомендуем вам разбить запрашиваемую сумму на несколько частей и оформить заявку одновременно в 2-3 компаниях.
-        .hero__cta
-          a.button(href="#") Посмотреть предложения
+      .header__hero
+        .hero
+          .hero__caption
+            h1.hero__title Вам одобрены <br>следующие займы:
+            p.hero__subtitle Для увеличения вероятности получения займа рекомендуем вам разбить запрашиваемую сумму на несколько частей и оформить заявку одновременно в 2-3 компаниях.
+            .hero__cta
+              a.button(href="#") Посмотреть предложения
 
     main
       section.offers#offers
         a.offer(href="#")
           header.offer__header
-            .label.label--orange
-            .label.label--blue
+            .label.label--orange Лучшее предложение
+            .label.label--blue Займ под 0%
           .offer__content
-            .offer__row
+            .offer__description
               h3.offer__title
               ul.offer__desc-list
                 li.offer__desc-item Высокое одобрение
@@ -75,20 +79,209 @@ html(lang="en")
                 .offer__probability
                   .probability
                     h4.probability__title Вероятность одобрения
+                    h4.probability__mobile-title Одобрение:
                     p.probability__value 92%
                     .probability__star
                       img(src="./img/star.svg", alt="")
                 .offer__cta
-                  p.offer__max-value до <b>30&thinsp;000&thinsp;₽
-                  a.button(href="#") Получить
+                  p.offer__max-value до <b>30&thinsp;000&thinsp;₽</b>
+                  .button(href="#") Получить
 
         a.offer(href="#")
           header.offer__header
+            .label.label--orange Займ без процентов
           .offer__content
+            .offer__description
+              h3.offer__title
+              ul.offer__desc-list
+                li.offer__desc-item Высокое одобрение
+                li.offer__desc-item Высокая скорость получения
+                li.offer__desc-item Первый займ без процентов
             .offer__row
               .offer__column
                 .offer__logo
                   img(src="./img/logos/logo-2.png", alt="")
+                .offer__numbers
+                  .number
+                    h4.number__title Ставка
+                    p.number__value от 0%
+                  .number
+                    h4.number__title Возраст
+                    p.number__value от 20 лет
+                  .number
+                    h4.number__title Срок
+                    p.number__value до 365 дней
+              .offer__column
+                .offer__probability
+                  .probability
+                    h4.probability__title Вероятность одобрения
+                    h4.probability__mobile-title Одобрение:
+                    p.probability__value 93%
+                    .probability__star
+                      img(src="./img/star.svg", alt="")
+                .offer__cta
+                  p.offer__max-value до <b>100&thinsp;000&thinsp;₽</b>
+                  .button(href="#") Получить
+
+        a.offer(href="#")
+          header.offer__header
+            .label.label--orange На длительный срок
+          .offer__content
+            .offer__description
+              h3.offer__title
+              ul.offer__desc-list
+                li.offer__desc-item Высокое одобрение
+                li.offer__desc-item Высокая скорость получения
+                li.offer__desc-item Первый займ без процентов
+            .offer__row
+              .offer__column
+                .offer__logo
+                  img(src="./img/logos/logo-3.png", alt="")
+                .offer__numbers
+                  .number
+                    h4.number__title Ставка
+                    p.number__value от 0%
+                  .number
+                    h4.number__title Возраст
+                    p.number__value от 20 лет
+                  .number
+                    h4.number__title Срок
+                    p.number__value до 365 дней
+              .offer__column
+                .offer__probability
+                  .probability
+                    h4.probability__title Вероятность одобрения
+                    h4.probability__mobile-title Одобрение:
+                    p.probability__value 98%
+                    .probability__star
+                      img(src="./img/star.svg", alt="")
+                .offer__cta
+                  p.offer__max-value до <b>100&thinsp;000&thinsp;₽</b>
+                  .button(href="#") Получить
+
+        a.offer(href="#")
+          header.offer__header
+            .label.label--blue Автоматическое одобрение
+          .offer__content
+            .offer__description
+              h3.offer__title
+              ul.offer__desc-list
+                li.offer__desc-item Высокое одобрение
+                li.offer__desc-item Высокая скорость получения
+                li.offer__desc-item Первый займ без процентов
+            .offer__row
+              .offer__column
+                .offer__logo
+                  img(src="./img/logos/logo-4.png", alt="")
+                .offer__numbers
+                  .number
+                    h4.number__title Ставка
+                    p.number__value от 0%
+                  .number
+                    h4.number__title Возраст
+                    p.number__value от 18 лет
+                  .number
+                    h4.number__title Срок
+                    p.number__value до 30 дней
+              .offer__column
+                .offer__probability
+                  .probability
+                    h4.probability__title Вероятность одобрения
+                    h4.probability__mobile-title Одобрение:
+                    p.probability__value 96%
+                    .probability__star
+                      img(src="./img/star.svg", alt="")
+                .offer__cta
+                  p.offer__max-value до <b>30&thinsp;000&thinsp;₽</b>
+                  .button(href="#") Получить
+
+        a.offer(href="#")
+          header.offer__header
+            .label.label--blue Высокое одобрение
+          .offer__content
+            .offer__description
+              h3.offer__title
+              ul.offer__desc-list
+                li.offer__desc-item Высокое одобрение
+                li.offer__desc-item Высокая скорость получения
+                li.offer__desc-item Первый займ без процентов
+            .offer__row
+              .offer__column
+                .offer__logo
+                  img(src="./img/logos/logo-5.png", alt="")
+                .offer__numbers
+                  .number
+                    h4.number__title Ставка
+                    p.number__value от 0%
+                  .number
+                    h4.number__title Возраст
+                    p.number__value от 18 лет
+                  .number
+                    h4.number__title Срок
+                    p.number__value до 30 дней
+              .offer__column
+                .offer__probability
+                  .probability
+                    h4.probability__title Вероятность одобрения
+                    h4.probability__mobile-title Одобрение:
+                    p.probability__value 95%
+                    .probability__star
+                      img(src="./img/star.svg", alt="")
+                .offer__cta
+                  p.offer__max-value до <b>10&thinsp;000&thinsp;₽</b>
+                  .button(href="#") Получить
+
+        a.offer(href="#")
+          header.offer__header
+            .label.label--orange Первый займ 0%
+          .offer__content
+            .offer__description
+              h3.offer__title
+              ul.offer__desc-list
+                li.offer__desc-item Высокое одобрение
+                li.offer__desc-item Высокая скорость получения
+                li.offer__desc-item Первый займ без процентов
+            .offer__row
+              .offer__column
+                .offer__logo
+                  img(src="./img/logos/logo-6.png", alt="")
+                .offer__numbers
+                  .number
+                    h4.number__title Ставка
+                    p.number__value от 0%
+                  .number
+                    h4.number__title Возраст
+                    p.number__value от 18 лет
+                  .number
+                    h4.number__title Срок
+                    p.number__value до 30 дней
+              .offer__column
+                .offer__probability
+                  .probability
+                    h4.probability__title Вероятность одобрения
+                    h4.probability__mobile-title Одобрение:
+                    p.probability__value 93%
+                    .probability__star
+                      img(src="./img/star.svg", alt="")
+                .offer__cta
+                  p.offer__max-value до <b>30&thinsp;000&thinsp;₽</b>
+                  .button(href="#") Получить
+
+        a.offer(href="#")
+          header.offer__header
+            .label.label--orange Лучшее предложение
+            .label.label--blue Займ под 0%
+          .offer__content
+            .offer__description
+              h3.offer__title
+              ul.offer__desc-list
+                li.offer__desc-item Высокое одобрение
+                li.offer__desc-item Высокая скорость получения
+                li.offer__desc-item Первый займ без процентов
+            .offer__row
+              .offer__column
+                .offer__logo
+                  img(src="./img/logos/logo-1.png", alt="")
                 .offer__numbers
                   .number
                     h4.number__title Ставка
@@ -103,12 +296,87 @@ html(lang="en")
                 .offer__probability
                   .probability
                     h4.probability__title Вероятность одобрения
+                    h4.probability__mobile-title Одобрение:
                     p.probability__value 92%
                     .probability__star
                       img(src="./img/star.svg", alt="")
                 .offer__cta
-                  p.offer__max-value до <b>30&thinsp;000&thinsp;₽
-                  a.button(href="#") Получить
+                  p.offer__max-value до <b>30&thinsp;000&thinsp;₽</b>
+                  .button(href="#") Получить
+
+        a.offer(href="#")
+          header.offer__header
+            .label.label--orange Лучшее предложение
+            .label.label--blue Займ под 0%
+          .offer__content
+            .offer__description
+              h3.offer__title
+              ul.offer__desc-list
+                li.offer__desc-item Высокое одобрение
+                li.offer__desc-item Высокая скорость получения
+                li.offer__desc-item Первый займ без процентов
+            .offer__row
+              .offer__column
+                .offer__logo
+                  img(src="./img/logos/logo-1.png", alt="")
+                .offer__numbers
+                  .number
+                    h4.number__title Ставка
+                    p.number__value от 0%
+                  .number
+                    h4.number__title Возраст
+                    p.number__value от 20 лет
+                  .number
+                    h4.number__title Срок
+                    p.number__value до 21 дня
+              .offer__column
+                .offer__probability
+                  .probability
+                    h4.probability__title Вероятность одобрения
+                    h4.probability__mobile-title Одобрение:
+                    p.probability__value 92%
+                    .probability__star
+                      img(src="./img/star.svg", alt="")
+                .offer__cta
+                  p.offer__max-value до <b>30&thinsp;000&thinsp;₽</b>
+                  .button(href="#") Получить
+
+        a.offer(href="#")
+          header.offer__header
+            .label.label--orange Лучшее предложение
+            .label.label--blue Займ под 0%
+          .offer__content
+            .offer__description
+              h3.offer__title
+              ul.offer__desc-list
+                li.offer__desc-item Высокое одобрение
+                li.offer__desc-item Высокая скорость получения
+                li.offer__desc-item Первый займ без процентов
+            .offer__row
+              .offer__column
+                .offer__logo
+                  img(src="./img/logos/logo-1.png", alt="")
+                .offer__numbers
+                  .number
+                    h4.number__title Ставка
+                    p.number__value от 0%
+                  .number
+                    h4.number__title Возраст
+                    p.number__value от 20 лет
+                  .number
+                    h4.number__title Срок
+                    p.number__value до 21 дня
+              .offer__column
+                .offer__probability
+                  .probability
+                    h4.probability__title Вероятность одобрения
+                    h4.probability__mobile-title Одобрение:
+                    p.probability__value 92%
+                    .probability__star
+                      img(src="./img/star.svg", alt="")
+                .offer__cta
+                  p.offer__max-value до <b>30&thinsp;000&thinsp;₽</b>
+                  .button(href="#") Получить
 
 
       section.description

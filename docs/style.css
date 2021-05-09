@@ -116,11 +116,230 @@ body {
   font-style: normal;
   font-display: swap; }
 
+.header {
+  padding: 1.5rem;
+  background-image: linear-gradient(to bottom, #69a938, #ffffff); }
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem; }
+
+.header__logo-n-nav {
+  position: absolute; }
+
+.header__logo {
+  display: none; }
+
+.header__nav {
+  display: none; }
+
+.header__city {
+  margin-bottom: 1rem; }
+
+.header__menu-button {
+  padding-top: 0.5rem;
+  width: 2rem; }
+
+.city {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none; }
+
+.city__marker {
+  height: 2rem;
+  width: 2rem;
+  margin-right: 0.5rem; }
+
+.city__marker img,
+.city__marker svg {
+  height: 100%;
+  fill: #ffffff; }
+
+.city__text {
+  margin-right: 0.5rem;
+  color: #ffffff;
+  text-align: left; }
+
+.city__your {
+  margin-bottom: 0.25rem;
+  font-size: 0.85rem;
+  line-height: 1; }
+
+.city__city {
+  font-weight: 600;
+  line-height: 1; }
+
+.loans-given {
+  display: flex;
+  align-items: center;
+  color: #ffffff; }
+
+.loans-given__icon {
+  height: 2rem;
+  width: 2rem;
+  margin-right: 0.5rem; }
+
+.loans-given__icon img,
+.loans-given__icon svg {
+  height: 100%;
+  fill: #ffffff; }
+
+.loans-given__number {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1; }
+
+.loans-given__given {
+  font-size: 0.85rem;
+  line-height: 1; }
+
 .menu-button {
   display: block;
-  height: 100%;
   font-size: 0; }
 
 .menu-button svg {
-  height: 100%;
+  width: 100%;
   fill: #ffffff; }
+
+.hero__title {
+  margin-bottom: 0.5rem;
+  color: #282b3b;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.25; }
+
+.hero__subtitle {
+  font-size: 0.75rem; }
+
+.hero__cta {
+  display: none; }
+
+.button {
+  padding: 0.5rem 1rem;
+  border: 2px solid #69a938;
+  border-radius: 2rem;
+  color: #282b3b;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase; }
+
+.offers {
+  padding: 0.75rem; }
+
+.offer {
+  position: relative;
+  display: block;
+  margin-bottom: 2rem;
+  text-decoration: none; }
+
+.offer__header {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-start; }
+
+.offer__content {
+  position: relative;
+  z-index: 2;
+  padding: 0.75rem;
+  border: 4px solid #69a938;
+  border-radius: 1rem;
+  background-color: #ffffff; }
+
+.offer__description {
+  display: none; }
+
+.offer__row {
+  display: flex;
+  justify-content: space-between; }
+
+.offer__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: calc(50% - 0.75rem); }
+
+.offer__logo img {
+  width: 100%; }
+
+.offer__numbers {
+  justify-content: space-between; }
+
+.offer__max-value {
+  margin-bottom: 0.5rem;
+  margin-right: 0.25rem;
+  color: #2f4f17;
+  font-size: 1.25rem;
+  text-align: right; }
+
+.probability {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #69a938; }
+
+.probability__title {
+  display: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.75rem; }
+
+.probability__mobile-title {
+  margin-right: 0.5rem;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.75rem; }
+
+.probability__value {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600; }
+
+.probability__star {
+  display: none; }
+
+.number {
+  margin-bottom: 0.5rem; }
+
+.number__title {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.25; }
+
+.number__value {
+  color: #282b3b;
+  font-weight: 600;
+  font-size: 0.9rem;
+  line-height: 1.25; }
+
+.label {
+  margin-bottom: -1rem;
+  margin-right: -1rem;
+  padding: 0.5rem 1rem;
+  padding-bottom: 1.5rem;
+  padding-right: 1.5rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  color: #ffffff;
+  font-size: 0.625rem;
+  font-weight: 500;
+  background-color: #69a938; }
+
+.label:last-of-type {
+  padding-right: 1rem; }
+
+.label--orange {
+  background-color: #e97d1d; }
+
+.label--blue {
+  background-color: #1b74b4; }

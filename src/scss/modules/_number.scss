@@ -1,0 +1,19 @@
+.number {
+  // box model
+  margin-bottom: 0.5rem;
+}
+
+.number__title {
+  // typography
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.25;
+}
+
+.number__value {
+  // typography
+  color: $dark;
+  font-weight: 600;
+  font-size: 0.9rem;
+  line-height: 1.25;
+}

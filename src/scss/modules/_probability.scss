@@ -1,0 +1,49 @@
+.probability {
+  // box model
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+
+  // border
+  border-radius: 0.5rem;
+
+  // visual
+  background-color: $green;
+}
+
+.probability__title {
+  // box model
+  display: none;
+
+  // typography
+  color: $white;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+
+.probability__mobile-title {
+  // box model
+  margin-right: 0.5rem;
+
+  // typography
+  color: $white;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+
+.probability__value {
+  // typography
+  color: $white;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.probability__star {
+  // box model
+  display: none;
+}
+
+.probability__star svg {
+
+}

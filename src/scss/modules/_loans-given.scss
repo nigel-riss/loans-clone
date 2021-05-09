@@ -1,11 +1,39 @@
 .loans-given {
+  // box model
+  display: flex;
+  align-items: center;
 
+  // typography
+  color: $white;
+}
+
+.loans-given__icon {
+  // box model
+  // order: 1;
+  // width: 1.5rem;
+  height: 2rem;
+  width: 2rem;
+  margin-right: 0.5rem;
+}
+
+.loans-given__icon img,
+.loans-given__icon svg {
+  // box model
+  height: 100%;
+
+  // visual
+  fill: $white;
 }
 
 .loans-given__number {
-
+  // typography
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1;
 }
 
 .loans-given__given {
-
+  // typography
+  font-size: 0.85rem;
+  line-height: 1;
 }

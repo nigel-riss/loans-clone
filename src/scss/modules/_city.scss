@@ -1,25 +1,58 @@
 .city {
+  // box model
+  display: flex;
+  align-items: center;
+  padding: 0;
 
+  // border
+  border: none;
+
+  // visual
+  background-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 .city__marker {
-
+  // box model
+  // order: 1;
+  // width: 1.5rem;
+  height: 2rem;
+  width: 2rem;
+  margin-right: 0.5rem;
+  // text-align: left;
 }
 
 .city__marker img,
 .city__marker svg {
+  // box model
+  height: 100%;
 
+  // visual
+  fill: $white;
 }
 
 .city__text {
+  // box model
+  margin-right: 0.5rem;
 
+  // typography
+  color: $white;
+  text-align: left;
 }
 
 .city__your {
+  // box model
+  margin-bottom: 0.25rem;
 
+  // typography
+  font-size: 0.85rem;
+  line-height: 1;
 }
 
 .city__city {
-
+  // typography
+  font-weight: 600;
+  line-height: 1;
 }
 
