@@ -115,3 +115,12 @@ body {
   font-weight: 400;
   font-style: normal;
   font-display: swap; }
+
+.menu-button {
+  display: block;
+  height: 100%;
+  font-size: 0; }
+
+.menu-button svg {
+  height: 100%;
+  fill: #ffffff; }

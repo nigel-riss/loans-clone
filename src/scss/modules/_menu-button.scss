@@ -1,0 +1,16 @@
+.menu-button {
+  // box model
+  display: block;
+  height: 100%;
+
+  // typography
+  font-size: 0;
+}
+
+.menu-button svg {
+  // box model
+  height: 100%;
+
+  // visual
+  fill: $white;
+}

@@ -9,3 +9,30 @@
 
 // Fonts
 @import './fonts/fonts';
+
+
+// Modules
+//   Hero
+@import './modules/header';
+@import './modules/main-nav';
+@import './modules/city';
+@import './modules/loans-given';
+@import './modules/menu-button';
+@import './modules/hero';
+@import './modules/button';
+
+//   Offers
+@import './modules/offers';
+@import './modules/offer';
+@import './modules/number';
+@import './modules/label';
+
+//   Texts
+@import './modules/description';
+@import './modules/disclaimer';
+@import './modules/section-title';
+@import './modules/section-text';
+
+//   Footer
+@import './modules/footer';
+@import './modules/up-button';
