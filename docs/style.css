@@ -564,6 +564,15 @@ body {
     .description {
       padding: 4rem calc(50vw - 34rem); } }
 
+@media (min-width: 1000px) {
+  .description__row {
+    display: flex;
+    justify-content: space-between; } }
+
+@media (min-width: 1000px) {
+  .description__column {
+    flex-basis: calc(50% - 2rem); } }
+
 .disclaimer {
   padding: 1.5rem; }
   @media (min-width: 600px) {

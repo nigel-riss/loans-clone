@@ -23,3 +23,18 @@
     padding: 4rem $dPadding;
   }
 }
+
+.description__row {
+  @include atDesktopS {
+    // box model
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.description__column {
+  @include atDesktopS {
+    // box model
+    flex-basis: calc(50% - 2rem);
+  }
+}
