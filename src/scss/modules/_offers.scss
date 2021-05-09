@@ -1,4 +1,7 @@
 .offers {
   // box model
   padding: 0.75rem;
+
+  // visual
+  background-image: linear-gradient(to top, $green, $white 25rem);
 }
