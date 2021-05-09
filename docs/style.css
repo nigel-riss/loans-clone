@@ -28,9 +28,11 @@ dd {
 
 body {
   min-height: 100vh;
-  scroll-behavior: smooth;
   text-rendering: geometricPrecision;
   line-height: 1.5; }
+
+html {
+  scroll-behavior: smooth; }
 
 ul[class],
 ol[class] {
@@ -358,5 +360,35 @@ body {
 
 .footer {
   padding: 1.5rem;
+  padding-bottom: 3rem;
   font-size: 0.85rem;
   text-align: center; }
+
+.up-button {
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  right: 1rem;
+  display: flex;
+  align-items: center;
+  padding: 0.25rem 1rem;
+  padding-left: 0.75rem;
+  border: 2px solid #69a938;
+  border-bottom: none;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  color: #2f4f17;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #ffffff;
+  opacity: 1; }
+
+.up-button--opaque {
+  opacity: 0; }
+
+.up-button__icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: 0.5rem; }

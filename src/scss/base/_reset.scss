@@ -38,11 +38,14 @@ dd {
 // Set core body defaults
 body {
   min-height: 100vh;
-  scroll-behavior: smooth;
   // text-rendering: optimizeSpeed;
   // text-rendering: optimizeLegibility;
   text-rendering: geometricPrecision;
   line-height: 1.5;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 // Remove list styles on ul, ol elements with class attribute
