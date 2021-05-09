@@ -96,40 +96,88 @@
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Menu", function() { return Menu; });
-class Menu {
-  constructor() {
-    this._menuButton = document.querySelector(`#menu-button`);
-    this._closeButton = document.querySelector(`#close-button`);
-    this._mainNav = document.querySelector(`.header__logo-n-nav`);
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+var Menu = /*#__PURE__*/function () {
+  function Menu() {
+    var _this = this;
+
+    _classCallCheck(this, Menu);
+
+    this._menuButton = document.querySelector("#menu-button");
+    this._closeButton = document.querySelector("#close-button");
+    this._mainNav = document.querySelector(".header__logo-n-nav");
 
     if (this._menuButton && this._closeButton) {
-      this._menuButton.addEventListener(`click`, () => {
-        this._toggleMenu();
+      this._menuButton.addEventListener("click", function () {
+        _this._toggleMenu();
       });
 
-      this._closeButton.addEventListener(`click`, () => {
-        this._toggleMenu();
+      this._closeButton.addEventListener("click", function () {
+        _this._toggleMenu();
       });
     }
 
     if (this._mainNav) {
-      this._mainNav.addEventListener(`click`, evt => {
-        if (evt.target.classList.contains(`main-nav__link`)) {
-          this._closeMenu();
+      this._mainNav.addEventListener("click", function (evt) {
+        if (evt.target.classList.contains("main-nav__link")) {
+          _this._closeMenu();
         }
       });
     }
   }
 
-  _toggleMenu() {
-    this._mainNav.classList.toggle(`open`);
-  }
+  _createClass(Menu, [{
+    key: "_toggleMenu",
+    value: function _toggleMenu() {
+      this._mainNav.classList.toggle("open");
+    }
+  }, {
+    key: "_closeMenu",
+    value: function _closeMenu() {
+      this._mainNav.classList.remove("open");
+    }
+  }]);
 
-  _closeMenu() {
-    this._mainNav.classList.remove(`open`);
-  }
+  return Menu;
+}();
 
-}
+/***/ }),
+
+/***/ "./src/js/modules/up.js":
+/*!******************************!*\
+  !*** ./src/js/modules/up.js ***!
+  \******************************/
+/*! exports provided: UpButton */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UpButton", function() { return UpButton; });
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var UpButton = function UpButton() {
+  var _this = this;
+
+  _classCallCheck(this, UpButton);
+
+  this._upButton = document.querySelector("#up-button");
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > window.innerHeight) {
+      var _this$_upButton;
+
+      (_this$_upButton = _this._upButton) === null || _this$_upButton === void 0 ? void 0 : _this$_upButton.classList.add("shown");
+    } else {
+      var _this$_upButton2;
+
+      (_this$_upButton2 = _this._upButton) === null || _this$_upButton2 === void 0 ? void 0 : _this$_upButton2.classList.remove("shown");
+    }
+  });
+};
 
 /***/ }),
 
@@ -143,9 +191,13 @@ class Menu {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_menu_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/menu.js */ "./src/js/modules/menu.js");
+/* harmony import */ var _modules_up_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/up.js */ "./src/js/modules/up.js");
 
 
-const _menu = new _modules_menu_js__WEBPACK_IMPORTED_MODULE_0__["Menu"]();
+
+var _menu = new _modules_menu_js__WEBPACK_IMPORTED_MODULE_0__["Menu"]();
+
+var _up = new _modules_up_js__WEBPACK_IMPORTED_MODULE_1__["UpButton"]();
 
 /***/ })
 

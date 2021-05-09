@@ -86,6 +86,9 @@
 
     // visual
     background-color: transparent;
+    background-image: none;
+    opacity: 1;
+    pointer-events: all;
   }
 
   &.open {

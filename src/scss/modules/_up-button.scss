@@ -26,13 +26,17 @@
 
   // visual
   background-color: $white;
-  opacity: 1;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s ease-out;
+
+  &.shown {
+    // visual
+    opacity: 1;
+    pointer-events: all;
+  }
 }
 
-.up-button--opaque {
-  // visual
-  opacity: 0;
-}
 
 .up-button__icon {
   // box model
