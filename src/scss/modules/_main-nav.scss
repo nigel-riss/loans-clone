@@ -1,6 +1,4 @@
 .main-nav {
-  // visual
-  background-color: $lightGreen;
 }
 
 .main-nav__list {
@@ -29,4 +27,16 @@
 
   // visual
   background-color: $white;
+
+  @include atTablet {
+    // box model
+
+    // typography
+    color: $white;
+    letter-spacing: normal;
+    text-transform: none;
+
+    // visual
+    background-color: transparent;
+  }
 }

@@ -73,6 +73,13 @@
   @include atTablet {
     // positioning
     position: relative;
+
+    // box model
+    display: flex;
+    padding: 0;
+
+    // visual
+    background-color: transparent;
   }
 }
 
@@ -94,6 +101,11 @@
   background-color: transparent;
   -webkit-appearance: none;
   -moz-appearance: none;
+
+  @include atTablet {
+    // box model
+    display: none;
+  }
 }
 
 .header__column {

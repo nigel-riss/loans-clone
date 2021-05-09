@@ -157,7 +157,10 @@ body {
   background-color: #8dd252; }
   @media (min-width: 600px) {
     .header__logo-n-nav {
-      position: relative; } }
+      position: relative;
+      display: flex;
+      padding: 0;
+      background-color: transparent; } }
 
 .header__close {
   position: absolute;
@@ -170,6 +173,9 @@ body {
   background-color: transparent;
   -webkit-appearance: none;
   -moz-appearance: none; }
+  @media (min-width: 600px) {
+    .header__close {
+      display: none; } }
 
 @media (min-width: 600px) {
   .header__column {
@@ -199,9 +205,6 @@ body {
     .header__menu-button {
       display: none; } }
 
-.main-nav {
-  background-color: #8dd252; }
-
 .main-nav__item {
   display: block; }
 
@@ -215,6 +218,12 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   background-color: #ffffff; }
+  @media (min-width: 600px) {
+    .main-nav__link {
+      color: #ffffff;
+      letter-spacing: normal;
+      text-transform: none;
+      background-color: transparent; } }
 
 .city {
   display: flex;
