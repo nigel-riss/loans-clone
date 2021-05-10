@@ -27,6 +27,7 @@
 
   // visual
   background-color: $white;
+  transition: all 0.25s ease-out;
 
   @include atTablet {
     // box model
@@ -39,4 +40,12 @@
     // visual
     background-color: transparent;
   }
+
+  @include atDesktopS {
+    &:hover {
+      // typography
+      color: $orange;
+    }
+  }
+
 }

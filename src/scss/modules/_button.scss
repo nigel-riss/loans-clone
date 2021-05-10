@@ -20,6 +20,7 @@
   background-color: $white;
   -webkit-appearance: none;
   -moz-appearance: none;
+  transition: all 0.25s ease-out;
 
   @include atTablet {
     // box model
@@ -28,7 +29,14 @@
 }
 
 .button:hover {
+  // typography
+  color: $white;
 
+  // border
+  border-color: $orange;
+
+  // visual
+  background-color: $orange;
 }
 
 .button:active {
