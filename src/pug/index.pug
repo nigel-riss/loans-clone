@@ -13,7 +13,8 @@ html(lang="en")
     header.header
       .header__top
         .header__logo-n-nav
-          button.header__close#close-button x
+          button.header__close#close-button
+            img(src="./img/x.svg", alt="")
           .header__logo
             img(src="./img/rouble.svg", alt="logo")
           nav.header__nav
@@ -23,7 +24,7 @@ html(lang="en")
 
         .header__column
           .header__city
-            button.city
+            button.city#city-button
               .city__marker
                 img(src="./img/marker.svg", alt="")
               .city__text 
@@ -315,6 +316,17 @@ html(lang="en")
         p.section-text Настоящий сайт не принадлежит финансовой организации и на нём не оказываются финансовые услуги. Настоящий сайт является составным произведением, которое представляет собой в том числе каталог товарных знаков (знаков обслуживания), опубликованных в открытых реестрах ФИПС (Роспатент) и сопровождающихся подобранным каталогом финансовых услуг. Финансовые услуги из каталога оказываются непосредственно финансовыми организациями, и до их заказа вы должны ознакомиться с условиями документов, опубликованных непосредственно финансовой организацией. Исключительное право на товарные знаки (знаки обслуживания), представленные в вышеуказанном каталоге, принадлежат их правообладателям и охраняются в соответствии с выданными ФИПС (Роспатент) правоустанавливающими документами для индивидуализации товаров, работ или услуг их непосредственных правообладателей.
 
       section.city-select
+        .city-select__overlay 
+        .city-select__wrapper
+          button.city-select__close#city-close
+            img(src="./img/x.svg", alt="")
+          .city-select__caption
+            h3.city-select__title Ваш город: <br><b>Санкт-Петербург</b>
+            button.button#city-ok верно
+          form.city-select__form(action="#") 
+            label.city-select__label(for="") Если это не так, выберите свой город:
+            input.city-select__input(type="text" placeholder="Введите название города")
+            input.city-select__button.button(type="submit", value="Выбрать")
 
     footer.footer
       p.footer__copy © 2021 сервис по подбору займов

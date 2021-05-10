@@ -23,10 +23,10 @@ export class Menu {
   }
 
   _toggleMenu() {
-    this._mainNav.classList.toggle(`open`);
+    this._mainNav?.classList.toggle(`open`);
   }
 
   _closeMenu() {
-    this._mainNav.classList.remove(`open`);
+    this._mainNav?.classList.remove(`open`);
   }
 }

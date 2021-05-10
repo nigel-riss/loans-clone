@@ -178,6 +178,9 @@ body {
   position: absolute;
   right: 1.5rem;
   top: 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0;
   border: none;
   color: #ffffff;
   font-size: 2rem;
@@ -188,6 +191,10 @@ body {
   @media (min-width: 600px) {
     .header__close {
       display: none; } }
+
+.header__close svg {
+  width: 100%;
+  fill: #ffffff; }
 
 @media (min-width: 600px) {
   .header__column {
@@ -376,6 +383,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   background-color: #ffffff;
+  cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
   transition: all 0.25s ease-out; }
@@ -390,7 +398,7 @@ body {
 
 .offers {
   padding: 0.75rem;
-  background-image: linear-gradient(to bottom, #8dd252, transparent 25rem), linear-gradient(to top, #69a938, transparent 50rem);
+  background-image: linear-gradient(to bottom, #8dd252, transparent 50rem), linear-gradient(to top, #69a938, transparent 50rem);
   background-position: top center, bottom center; }
   @media (min-width: 600px) {
     .offers {
@@ -423,8 +431,9 @@ body {
   margin-bottom: 2rem;
   text-decoration: none; }
 
-.offer:hover .offer__content {
-  background-position: center left 0; }
+@media (min-width: 1000px) {
+  .offer:hover .offer__content {
+    background-position: center left 0; } }
 
 .offer__header {
   position: relative;
@@ -440,9 +449,9 @@ body {
   border-radius: 1rem;
   background-color: #ffffff;
   background-image: linear-gradient(to right, #ffffff, #ffffff 16rem, #69a938);
-  background-position: center left 100rem;
+  background-position: center left 46rem;
   background-repeat: no-repeat;
-  transition: all 0.5s ease-out; }
+  transition: all 0.25s ease-out; }
   @media (min-width: 600px) {
     .offer__content {
       padding: 1rem; } }
@@ -705,12 +714,110 @@ body {
   background-color: #ffffff;
   opacity: 0;
   pointer-events: none;
-  transition: all 0.5s ease-out; }
+  transition: all 0.25s ease-out; }
   .up-button.shown {
     opacity: 1;
     pointer-events: all; }
+
+.up-button:hover {
+  color: #ffffff;
+  background-color: #69a938; }
 
 .up-button__icon {
   height: 1.5rem;
   width: 1.5rem;
   margin-right: 0.5rem; }
+
+.city-select {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.25s ease-out; }
+  .city-select.open {
+    opacity: 1;
+    pointer-events: all; }
+  @media (min-width: 1000px) {
+    .city-select {
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center; } }
+
+.city-select__overlay {
+  display: none; }
+  @media (min-width: 1000px) {
+    .city-select__overlay {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+      display: block;
+      background-color: rgba(255, 255, 255, 0.5); } }
+
+.city-select__wrapper {
+  padding: 3rem 1.5rem;
+  background-color: #69a938; }
+  @media (min-width: 1000px) {
+    .city-select__wrapper {
+      position: relative;
+      z-index: 2;
+      width: 40rem;
+      padding: 3rem 2rem;
+      padding-right: 20rem;
+      border-radius: 1rem;
+      background-image: url("./img/city-bg.svg");
+      background-size: 16rem;
+      background-repeat: no-repeat;
+      background-position: center right 2rem; } }
+
+.city-select__close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none; }
+
+.city-select__close svg {
+  width: 100%;
+  fill: #ffffff; }
+
+.city-select__caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem; }
+
+.city-select__title {
+  margin-bottom: 0.25rem;
+  color: #ffffff;
+  font-weight: 400;
+  text-align: center; }
+
+.city-select__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.city-select__label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+  font-size: 0.85rem; }
+
+.city-select__input {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  padding: 0.25rem 1rem;
+  text-align: center; }

@@ -104,6 +104,11 @@
   right: 1.5rem;
   top: 1.5rem;
 
+  // box model
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0;
+
   // border
   border: none;
 
@@ -121,6 +126,14 @@
     // box model
     display: none;
   }
+}
+
+.header__close svg {
+  // box model
+  width: 100%;
+
+  // visual
+  fill: $white;
 }
 
 .header__column {

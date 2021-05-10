@@ -28,13 +28,21 @@
   background-color: $white;
   opacity: 0;
   pointer-events: none;
-  transition: all 0.5s ease-out;
+  transition: all 0.25s ease-out;
 
   &.shown {
     // visual
     opacity: 1;
     pointer-events: all;
   }
+}
+
+.up-button:hover {
+  // typography
+  color: $white;
+
+  // visual
+  background-color: $green;
 }
 
 

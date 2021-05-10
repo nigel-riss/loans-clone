@@ -11,8 +11,10 @@
 }
 
 .offer:hover .offer__content {
-  // visual
-  background-position: center left 0;
+  @include atDesktopS {
+    // visual
+    background-position: center left 0;
+  }
 }
 
 .offer__header {
@@ -40,9 +42,9 @@
   // visual
   background-color: $white;
   background-image: linear-gradient(to right, $white, $white 16rem, $green);
-  background-position: center left 100rem;
+  background-position: center left 46rem;
   background-repeat: no-repeat;
-  transition: all 0.5s ease-out;
+  transition: all 0.25s ease-out;
 
   @include atTablet {
     // box model

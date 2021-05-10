@@ -1,0 +1,156 @@
+.city-select {
+  // positioning
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+
+  // visual
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.25s ease-out;
+
+  &.open {
+    // visual
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  @include atDesktopS {
+    // positioning
+    bottom: 0;
+
+    // box model
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.city-select__overlay {
+  // box model
+  display: none;
+
+
+  @include atDesktopS {
+    // positioning
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    // box model
+    display: block;
+
+    // visual
+    background-color: rgba($white, 0.5);
+  }
+}
+
+.city-select__wrapper {
+  // box model
+  padding: 3rem 1.5rem;
+
+  // visual
+  background-color: $green;
+
+  @include atDesktopS {
+    // positioning
+    position: relative;
+    z-index: 2;
+    width: 40rem;
+    padding: 3rem 2rem;
+    padding-right: 20rem;
+
+    // border
+    border-radius: 1rem;
+
+    // visual
+    background-image: url('./img/city-bg.svg');
+    background-size: 16rem;
+    background-repeat: no-repeat;
+    background-position: center right 2rem;
+  }
+}
+
+.city-select__close {
+  // positioning
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+
+  // box model
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0;
+
+  // border
+  border: none;
+
+  // visual
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.city-select__close svg {
+  // box model
+  width: 100%;
+
+  // visual
+  fill: $white;
+}
+
+.city-select__caption {
+  // box model
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.city-select__title {
+  // box model
+  margin-bottom: 0.25rem;
+
+  // typography
+  color: $white;
+  font-weight: 400;
+  text-align: center;
+}
+
+.city-select__form {
+  // border: 2px solid fuchsia;
+  // box model
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.city-select__label {
+  // box model
+  display: block;
+  margin-bottom: 0.5rem;
+
+  // typography
+  color: $white;
+  font-size: 0.85rem;
+}
+
+.city-select__input {
+  // box model
+  width: 100%;
+  margin-bottom: 0.5rem;
+  padding: 0.25rem 1rem;
+
+  // typography
+  text-align: center;
+}
+
+.city-select__button {
+
+}
